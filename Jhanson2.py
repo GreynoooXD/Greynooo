@@ -529,7 +529,7 @@ def setting():
 #	print('>> 4. Mtouch ')
 	print('')
 	hc = input('>> Pilih : ')
-	elif hc in ['1','01']:
+	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
 		method.append('free')
