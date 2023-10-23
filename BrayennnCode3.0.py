@@ -672,6 +672,7 @@ def brayen_dump():
 	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
 	pil = input(f' [+] Masukan ID Target : ')
 	try:
+		
 	params = {
 			"access_token": tokenefb, 
 			"fields": "name,friends.fields(id,name,birthday)"
