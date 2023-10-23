@@ -101,8 +101,8 @@ for xd in range(10000):
 	
 
 #------------[ UBAH UA DIH SINI OM ]---------------#
-for t in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
+for brayen in range(10000):
+    a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.randrange(111111,210000)
 	c=random.randrange(73,100)
 	d=random.randrange(4200,4900)
@@ -116,7 +116,7 @@ for t in range(10000):
 	brayen7=f'Mozilla/5.0 (Linux; Android {a}; M2007J20CG Build/QKQ1.{b}.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4,brayen5,brayen6,brayen7])
 	ugen.append(uaku2)
-	
+
 for x in range(10):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
