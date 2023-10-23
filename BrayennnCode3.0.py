@@ -677,7 +677,7 @@ def brayen_dump():
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(f' [+] Total ID Yang Terkumpul : {}'(len(id)))
+		print(f' [+] Total ID Yang Terkumpul : {}'.format(len(id)));setting()
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(' [+] Internet Lu Gak Ada Anjing')
