@@ -673,11 +673,11 @@ def brayen_dump():
 	pil = input(f' [+] Masukan ID Target : ')
 	try:
 		
-		koH = requests.get("https://graph.facebook.com/{}".format(a),params = tokenku[0],cookies = {'cookie': kukis}).json()
+		koH = requests.get("https://graph.facebook.com/{}".format(5000),params = tokenku[0],cookies = {'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(f' [+] Total ID Yang Terkumpul : {}'.format(len(id)));setting()
+		print(f' [+] Total ID Yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(' [+] Internet Lu Gak Ada Anjing')
