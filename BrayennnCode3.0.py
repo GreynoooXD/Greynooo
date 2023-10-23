@@ -76,13 +76,13 @@ for xd in range(10000):
 for brayen in range(10000):
     rr = random.randint
     rc = random.choice
-    u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; M2010J19SI Build/SKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u2 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; SM-N9700 Build/SP1A.{str(rr(111111,210000))}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; CPH2213 Build/SP1A.{str(rr(111111,210000))}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; V2011A Build/TP1A.{str(rr(111111,210000))}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u5 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; RMX3516 Build/RP1A.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u6 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; itel W4002 Build/QP1A.{str(rr(111111,210000))}.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u7 = f"Mozilla/5.0 (Linux; Android {str(rr(4,13))}; M2007J20CG Build/QKQ1.{str(rr(111111,210000))}.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; M2010J19SI Build/SKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u2 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-N9700 Build/SP1A.{str(rr(111111,210000))}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; CPH2213 Build/SP1A.{str(rr(111111,210000))}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; V2011A Build/TP1A.{str(rr(111111,210000))}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u5 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; RMX3516 Build/RP1A.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u6 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; itel W4002 Build/QP1A.{str(rr(111111,210000))}.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u7 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; M2007J20CG Build/QKQ1.{str(rr(111111,210000))}.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     UaMainn = random.choice([u1, u2, u3, u4, u5, u6, u7])
     ugen.append(UaMainn)
  
