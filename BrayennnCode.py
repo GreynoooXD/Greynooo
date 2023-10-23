@@ -1114,7 +1114,7 @@ def nge_krek():
 		except Exception as e:
 			print(e)
 #-------------------[ CRACK-PUBLIK ]----------------#
-def nge_krek():
+def dump_massal():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 		a = input('>> masukan id target: ')
