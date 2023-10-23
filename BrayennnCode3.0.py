@@ -677,9 +677,14 @@ def brayen_dump():
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(f' [+] Total ID Yang Terkumpul : {}'.format(len(id)));atur_dulu()
-		except Exception as e:
-			print(e)
+		print(f' [+] Total ID Yang Terkumpul : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(' [+] Internet Lu Gak Ada Anjing')
+		exit()
+	except (KeyError,IOError):
+		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
 	try:
