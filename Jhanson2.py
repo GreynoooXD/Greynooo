@@ -318,7 +318,7 @@ def nge_krek1():
 			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
-			print('>> Total Idz : {h}'+str(len(id)))
+			print('>> Total Idz : {}'.format(len(id))))
 		except Exception as e:
 			print(e)
 #-------------------[ CRACK-PENGIKUT ]----------------#
