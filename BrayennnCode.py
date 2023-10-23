@@ -83,10 +83,10 @@ for t in range(10000):
 	c=random.randrange(73,100)
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
-	brayen1=f'Mozilla/5.0 (Linux; Android {a}; CPH2109 Build/RKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-J610G Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36 HeyTapBrowser/40.8.8.9'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; SM-A405FN Build/RP1A.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; SM-M317F Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen1=f'Mozilla/5.0 (Linux; Android {a}; M2010J19SI Build/SKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-N9700 Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36 HeyTapBrowser/40.8.8.9'
+	brayen3=f'Mozilla/5.0 (Linux; Android {a}; CPH2213 Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen4=f'Mozilla/5.0 (Linux; Android {a}; V2011A Build/TP1A.{b}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
 	ugen.append(uaku2)
 	
@@ -178,9 +178,9 @@ def banner():
 	cetak(panel(f"""
  ______ ___  _____  ___________  _____  _____ _   __ 
  |  ___/ _ \/  __ \|  ___| ___ \|  _  ||  _  | | / /
- | |_ / /_\ \ /  \/| |__ | |_/ /| | | || | | | |/ /     |  |   Author Script Alvino
- |  _||  _  | |    |  __|| ___ \| | | || | | |    \     |  |   Update By BrayennnXD 
- | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   Version Script 2.6
+ | |_ / /_\ \ /  \/| |__ | |_/ /| | | || | | | |/ /     |  |   Author Script BrayennnXD
+ |  _||  _  | |    |  __|| ___ \| | | || | | |    \     |  |   Update By GreynoooXD 
+ | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   GreynoooXD Update
  \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/                                                                                                     
              """,width=90,title=f"Banner",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
@@ -278,7 +278,7 @@ def menu(my_name,my_id):
 	banner()
 	ip = requests.get("https://api.ipify.org").text
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/] ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Hapus Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick(Rusak) [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Hapus Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold white]Ketik [bold green]"Lainnya"[bold white] Untuk Melihat Menu Tambahan | Ketik [bold green]"Bot"[bold white] Untuk Ke Menu Tambahan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____brayennn___xd____ = input(f' ╰─  Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
@@ -1117,7 +1117,7 @@ def nge_krek():
 def dump_massal():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		a = input('>> masukan id target: ')
+		a = input('👉 masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
