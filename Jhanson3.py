@@ -51,9 +51,7 @@ for t in range(10000):
 	brayen2=f'Mozilla/5.0 (Linux; Android {a}; 2201116SG Build/SKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
 	brayen3=f'Mozilla/5.0 (Linux; Android {a}; itel W5006X Build/QP1A.{b}.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
 	brayen4=f'Mozilla/5.0 (Linux; Android {a}; CPH2015 Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	brayen5=f'Mozilla/5.0 (Linux; Android {a}; Infinix X6826B Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	brayen6=f'Mozilla/5.0 (Linux; Android {a}; M2010J19SI Build/SKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4,brayen5,brayen6])
+	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
 	ugen.append(uaku2)
 	
 for x in range(10):
