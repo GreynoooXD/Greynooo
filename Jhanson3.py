@@ -52,11 +52,10 @@ for t in range(10000):
 	brayen3=f'Mozilla/5.0 (Linux; Android {a}; itel W5006X Build/QP1A.{b}.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
 	brayen4=f'Mozilla/5.0 (Linux; Android {a}; CPH2015 Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
 	brayen5=f'Mozilla/5.0 (Linux; Android {a}; Infinix X6826B Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	brayen6=f'Mozilla/5.0 (iPhone; CPU iPhone OS {a}_{b}_{c} like Mac OS {d}) AppleWebKit/605.1 (KHTML, like Gecko) Mobile/{e}Q{f} Safari/605.1'
-	brayen7=f'Mozilla/5.0 (Linux; Android {a}; M2010J19SI Build/SKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	brayen8=f'Mozilla/5.0 (Linux; Android {a}; RMX3516 Build/RP1A.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	brayen9=f'Mozilla/5.0 (Linux; Android {a}; V2011A Build/TP1A.{b}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
-	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4,brayen5,brayen6,brayen7,brayen8,brayen9])
+	brayen6=f'Mozilla/5.0 (Linux; Android {a}; M2010J19SI Build/SKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
+	brayen7=f'Mozilla/5.0 (Linux; Android {a}; RMX3516 Build/RP1A.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
+	brayen8=f'Mozilla/5.0 (Linux; Android {a}; V2011A Build/TP1A.{b}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.{d}.0.{e} Mobile Safari/537.36'
+	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4,brayen5,brayen6,brayen7,brayen8])
 	ugen.append(uaku2)
 	
 for x in range(10):
