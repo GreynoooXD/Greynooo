@@ -320,7 +320,7 @@ def nge_krek1():
 			"fields": "name,friends.fields(id,name,birthday)"
 			}
 			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
-			for c in b["teman tidak publik"]["data"]:
+			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
 			print('total idz terkumpul🔥 : {}'.format(len(id)))
 			setting()
