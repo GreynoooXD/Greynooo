@@ -104,16 +104,6 @@ except Exception as e:
 prox=open('.prox.txt','r').read().splitlines()
 #==============[ USER AGENT ]===============#
 def Saran(glento):
-CON=sol()
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-from rich.console import Console
-from rich.columns import Columns
-wa = Console()
-try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
