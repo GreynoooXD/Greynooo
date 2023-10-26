@@ -103,12 +103,6 @@ except Exception as e:
 	print('Connection error')
 prox=open('.prox.txt','r').read().splitlines()
 #==============[ USER AGENT ]===============#
-def Saran(glento):
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
-except Exception as e:
-	print('[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mBrayennnXD')
-prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
