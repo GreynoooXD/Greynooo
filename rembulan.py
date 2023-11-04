@@ -109,7 +109,7 @@ def baz_bann(berjalan):
 ###----------[ BANNER MENUH ]----------###
 def banner():
 	print('''\33[m
-REMBULAN-V6\x1b[1;91m
+REMBULAN-RECODE\x1b[1;91m
 ____ ____ _  _ ___  _  _ _    ____ _  _    
 |__/ |___ |\/| |__] |  | |    |__| |\ |    
 \33[m|  \ |___ |  | |__] |__| |___ |  | | \|    ''')
@@ -239,7 +239,7 @@ def login_men():
         os.system('clear')
         banlog()
         ses = requests.Session()
-        print('â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€')
+        print('')
         your_cookies=input(f'masukan cookie \n[>>] :{xxx}{hijo} ')
         with requests.Session() as r:
                 r.headers.update({
@@ -360,13 +360,13 @@ def menu1():
 		login_men()
 	os.system('clear')
 	banner()
-	print(f'{xxx}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€')
-	os.system("xdg-open https://wa.me/+6287708572833?text=Assalamualaikum+makasih+bang+sc+nya+moga+ijoðŸ™„")
-	print(f'{xxx}[>>] 1. join grup wa')
-	print(f'{xxx}[>>] 2. ke menu crack')
+	print(f'{xxx}TERIMA KASIH BAGI BANG VINDRA-ID DAN RISKIDEV1')
+	os.system("xdg-open https://wa.me/+6281342791377?text=Halo+makasih+bang+sc+nya+moga+ijoðŸ™„")
+	print(f'{xxx}1. join grup wa')
+	print(f'{xxx}2. ke menu crack')
 	helpbas = input(f'{xxx}[>>] : ')
 	if helpbas in ['1']:
-		os.system("xdg-open https://chat.whatsapp.com/BaeFyWi6BT3ItcR0mTI6Kx")
+		os.system("xdg-open https://chat.whatsapp.com/Gt1q2QrXgiBCbNj40KmWMN")
 		back()
 	elif helpbas in ['2']:
 		menu(id)
@@ -382,11 +382,11 @@ def menu(id):
 	os.system('clear')
 	banner()
 	print(f'{xxx}')
-	print(f'{xxx}[>>] 1. crack')
-	print(f'{xxx}[>>] 2. crack masal')
-	print(f'{xxx}[>>] 3. cek hasil crack')
-	print(f'{xxx}[>>] 0. hapus cookie')
-	helpbas = input(f'{xxx}[>>] : ')
+	print(f'{xxx}1. crack')
+	print(f'{xxx}2. crack masal')
+	print(f'{xxx}3. cek hasil crack')
+	print(f'{xxx}0. hapus cookie')
+	helpbas = input(f'{xxx}>> : ')
 	if helpbas in ['1']:
 		dump()
 	elif helpbas in ['3']:
