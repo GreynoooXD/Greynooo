@@ -116,12 +116,12 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	clear()
-	alvino_xy(f'''\t{asu} ______                                              
-\t╔╗
-\t║║╔═╦═╦═╦═╗   ❤️Author : Febryven
-\t║╚╣╬╠╗║╔╣╩╣   ❤️Verision : v1.0
-\t╚═╩═╝╚═╝╚═╝   ❤️Script : Crack Facebook	
+	cetak(panel(f"""
+╔╗
+║║╔═╦═╦═╦═╗    Author : Febryven
+║╚╣╬╠╗║╔╣╩╣    Version : Love Script
+╚═╩═╝╚═╝╚═╝                                                                                                     
+             """,width=90,title=f"Banner",style=f"bold white"))	
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -145,7 +145,7 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cok = input('[+] masukan cookie : ')
+		cok = input('---> Masukkan Cookies : ')
 		cos = {'cookie':cok}; data = {'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038', 'scope': ''}; req  = ses.post('https://graph.facebook.com/v16.0/device/login/',data=data).json(); cd   = req['code']; ucd  = req['user_code']; url  = 'https://graph.facebook.com/v16.0/device/login_status?method=post&code=%s&access_token=1348564698517390|007c0a9101b9e1c8ffab727666805038'%(cd); req  = sop(ses.get('https://mbasic.facebook.com/device',cookies=cos).content,'html.parser'); raq  = req.find('form',{'method':'post'}); dat  = {'jazoest' : re.search('name="jazoest" type="hidden" value="(.*?)"',str(raq)).group(1), 'fb_dtsg' : re.search('name="fb_dtsg" type="hidden" value="(.*?)"',str(req)).group(1), 'qr' : '0', 'user_code' : ucd}; rel  = 'https://mbasic.facebook.com' + raq['action']; pos  = sop(ses.post(rel,data=dat,cookies=cos).content,'html.parser')
 		dat  = {}
 		raq  = pos.find('form',{'method':'post'})
