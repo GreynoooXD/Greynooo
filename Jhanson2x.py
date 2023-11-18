@@ -47,10 +47,10 @@ for t in range(10000):
 	c=random.randrange(73,100)
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
-	brayen1=f'Mozilla/5.0 (Linux; Android {a}; Redmi Note 7S Build/QKQ1.{b}.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-A226B Build/RP1A.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; CPH2565 Build/TP1A.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; RMX3690 Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen1=f'Mozilla/5.0 (Linux; Android {a}; 23053RN02Y Build/TP1A.{b}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-N970F Build/QP1A.{b}.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen3=f'Mozilla/5.0 (Linux; Android {a}; CPH1925 Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen4=f'Mozilla/5.0 (Linux; Android {a}; RMX3381 Build/RP1A.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
 	ugen.append(uaku2)
 	
@@ -122,7 +122,7 @@ def banner():
 \t  |  __'.[ `/'`\]`'_\ : [_   ] [_   ]/ /__\\[ `/'`\] 
 \t _| |__) || |    // | |, .' /_  .' /_| \__., | |     	
 \t|_______/[___]   \'-;__/[_____][_____]'.__.'[___]    	
-			{m}•{k}•{h}•{sir} Author : Febriven_Greyno {x}{m}•{k}•{h}•{x}''')
+			{m}•{k}•{h}•{sir} Recode : Febriven_Greyno {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -523,8 +523,8 @@ def setting():
 	else:
 		print('>> Pilih Yang Bener Kontooll ')
 		exit()
-	print('>> 1. Mobile ')
-	print('>> 2. Mbasic ')
+	print('>> 1. Methode X ')
+#	print('>> 2. Mbasic ')
 #	print('>> 3. Touch  ')
 #	print('>> 4. Mtouch ')
 	print('')
@@ -617,7 +617,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r❤️ {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
