@@ -579,9 +579,9 @@ def passwrd():
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(frs+'123456')
-					pwv.append(kamu nanya)
 					pwv.append(kamunanya)
-					pwv.append(kata sandi)
+					pwv.append(kamunanya)
+					pwv.append(katasandi)
 					pwv.append(katasandi)
 					pwv.append(qwerty)
 			else:
@@ -593,9 +593,9 @@ def passwrd():
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(frs+'123456')
-					pwv.append(kamu nanya)
 					pwv.append(kamunanya)
-					pwv.append(kata sandi)
+					pwv.append(kamunanya)
+					pwv.append(katasandi)
 					pwv.append(katasandi)
 					pwv.append(qwerty)
 			if 'ya' in pwpluss:
