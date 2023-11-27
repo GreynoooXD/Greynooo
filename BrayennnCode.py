@@ -1112,10 +1112,10 @@ def nge_krek():
 				id.append(c["id"]+"|"+c["name"])
 			print(' 🔥 : {}'.format(len(id)));setting()
 		except requests.exceptions.ConnectionError:
-		print(' [bold red]Internet Lu Gak Ada Anjing')
+		print(' Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' [bold blue]Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
@@ -1132,10 +1132,10 @@ def dump_massal():
 				id.append(c["id"]+"|"+c["name"])
 			print(' 🔥 : {}'.format(len(id)));setting()
 		except requests.exceptions.ConnectionError:
-		print(' [bold red]Internet Lu Gak Ada Anjing')
+		print(' Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' [bold blue]Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
