@@ -1101,7 +1101,7 @@ def result():
 def nge_krek():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		a = input('>> masukan id target: ')
+		a = input('╰─  masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
@@ -1111,12 +1111,8 @@ def nge_krek():
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
 			print(' 🔥 : {}'.format(len(id)));setting()
-		except requests.exceptions.ConnectionError:
-		print(' Internet Lu Gak Ada Anjing')
-		exit()
-	except (KeyError,IOError):
-		print(' Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
-		exit()
+		except Exception as e:
+		    print (e)
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
 		token = open('.token.txt','r').read()
@@ -1131,12 +1127,8 @@ def dump_massal():
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
 			print(' 🔥 : {}'.format(len(id)));setting()
-		except requests.exceptions.ConnectionError:
-		print(' Internet Lu Gak Ada Anjing')
-		exit()
-	except (KeyError,IOError):
-		print(' Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
-		exit()
+		except Exception as e:
+		    print (e)
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print('')
