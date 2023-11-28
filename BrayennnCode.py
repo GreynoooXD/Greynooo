@@ -1183,16 +1183,6 @@ def setting():
 	else:
 		pwpluss.append('no')
 		
-	cetak(panel(f'[bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
-	_brayen_ = input('╰─  Pilih : ')
-	if _brayen_ in ['']:
-		print('╰─  Pilih Yang Bener Kontol ')
-		exit()
-	elif _brayen_ in ['y','Y']:
-		taplikasi.append('ya')
-	else:
-		taplikasi.append('no')
-		
 	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	uatambah = input(f'╰─  Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
