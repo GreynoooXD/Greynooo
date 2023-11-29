@@ -177,11 +177,11 @@ def back():
 def banner():
 	cetak(panel(f"""
 	
-██╗██╗░░██╗██████╗░           AUTHOR : IXB TEAM
-██║╚██╗██╔╝██╔══██╗           VERSION SCRIPT : NEW
-██║░╚███╔╝░██████╦╝           SCRIPT FUNCTION : CRACK FACEBOOK
-██║░██╔██╗░██╔══██╗           SCRIPT USERS : Greynooo, Apet, Farmin,
-██║██╔╝╚██╗██████╦╝           And Dumang
+██╗██╗░░██╗██████╗░    AUTHOR : IXB TEAM
+██║╚██╗██╔╝██╔══██╗    VERSION SCRIPT : NEW
+██║░╚███╔╝░██████╦╝    SCRIPT FUNCTION : CRACK FACEBOOK
+██║░██╔██╗░██╔══██╗    SCRIPT USERS : Greynooo, Apet, Farmin, And Dumang
+██║██╔╝╚██╗██████╦╝           
 ╚═╝╚═╝░░╚═╝╚═════╝░ 
                                                                                          
              """,width=90,title=f"Banner",style=f"bold red"))
