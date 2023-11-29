@@ -177,13 +177,14 @@ def back():
 def banner():
 	cetak(panel(f"""
 	
-██╗██╗░░██╗██████╗░.       AUTHOR : IXB TEAM
-██║╚██╗██╔╝██╔══██╗.       VERSION : NEW
-██║░╚███╔╝░██████╦╝.       
-██║░██╔██╗░██╔══██╗
-██║██╔╝╚██╗██████╦╝
-╚═╝╚═╝░░╚═╝╚═════╝░                                                                                                     
-             """,width=90,title=f"Banner",style=f"bold blue"))
+██╗██╗░░██╗██████╗░           AUTHOR : IXB TEAM
+██║╚██╗██╔╝██╔══██╗           VERSION SCRIPT : NEW
+██║░╚███╔╝░██████╦╝           SCRIPT FUNCTION : CRACK FACEBOOK
+██║░██╔██╗░██╔══██╗           SCRIPT USERS : Greynooo, Apet, Farmin,
+██║██╔╝╚██╗██████╦╝           And Dumang
+╚═╝╚═╝░░╚═╝╚═════╝░ 
+                                                                                         
+             """,width=90,title=f"Banner",style=f"bold red"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -280,7 +281,7 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]Asu[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/] ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick Massal(Rusak) [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Publik [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Hapus Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
-	cetak(panel(f'[bold white]Ketik [bold green]"Lainnya"[bold white] Untuk Melihat Menu Tambahan | Ketik [bold green]"Bot"[bold white] Untuk Ke Menu Tambahan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
+	cetak(panel(f'[bold white]Ketik [bold green]"Lainnya"[bold white] Untuk Melihat Menu Tambahan | Ketik [bold green]"Bot"[bold white] Untuk Ke Menu Tambahan',width=90,title=f"[bold green]Informasi Crack",style=f"bold red"))
 	_____brayennn___xd____ = input(f' ╰─  Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
@@ -1004,7 +1005,7 @@ def crack_file():
 		setting()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold red"))
 	kz = input(f'\n {P}[{x}{H}?{x}{P}]{x} {P}select{x} : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
@@ -1155,7 +1156,7 @@ def setting():
 	else:
 		print(' ╰─  Pilih Yang Bener Kontooll ')
 		exit()
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Metode Mobile V1 [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Metode Mbasic [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Metode B-Api [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Metode Mbeta [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Metode Reguler [[bold red]Not Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Metode Mobile V1 [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Metode Mbasic [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Metode B-Api [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Metode Mbeta [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Metode Reguler [[bold red]Not Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold red"))
 	hc = input(f' ╰─  Pilih Metode : ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -1173,7 +1174,7 @@ def setting():
 		method.append('mobile')
 	cetak(panel('''[bold white][[bold green]01[bold white]] [bold white]Nama, Nama123, Nama1234 [[bold green]Very Recommended[bold white]]
 [bold white][[bold green]02[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 [[bold green]Very Recommended[bold white]]
-[bold white][[bold green]03[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 + Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
+[bold white][[bold green]03[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 + Manual [[bold red]Not Recommended[bold white]]''',style='bold red',title='[bold green]Setting Password',width=90))
 	pwplus=input(f' ╰─  {P}Pilih sandi : ')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
@@ -1201,7 +1202,7 @@ def passwrd():
 	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
-	cetak(panel(f'\t[bold white]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
+	cetak(panel(f'\t[bold red]Ingat Mode Pesawatmu TeLaso Kalau Setiap 300 Idz Biar Te Spam IP',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold red"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
