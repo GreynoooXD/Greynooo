@@ -126,7 +126,6 @@ def banner():
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
-        banner()
         ses = requests.Session()
         print(f"{kun}╭────────────────────────────────────────────{puti}")
         cookie = input(f'{kun}└──[{puti} Cookies {hijo}: ')
