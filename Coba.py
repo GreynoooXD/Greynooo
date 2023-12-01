@@ -662,7 +662,6 @@ def result():
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
 def brayen_dump():
-	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	    a = input(' [+] Masukan ID Target: ')
