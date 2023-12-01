@@ -959,7 +959,6 @@ def menu():
 
 #----------[ CRACK-PUBLIK  ]----------#            
 def crack_publik():
-	try:
 		token = open('.cyxieontoken.txt','r').read()
 		cok = open('.cyxieoncokies.txt','r').read()
 	    a = input('>> masukan id target: ')
@@ -974,7 +973,6 @@ def crack_publik():
 			print(' 🔥 : {}'.format(len(id)));setting()
 		except Exception as e:
 		    print (e)
-	      
 #----------[ HASIL-OK ]----------#            
 def hasil_ok():
 	try:vin = os.listdir('CYXIEON-OK')
