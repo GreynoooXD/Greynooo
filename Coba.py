@@ -664,7 +664,7 @@ def result():
 def brayen_dump():
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		a = input('╰─  masukan id target: ')
+		a = input('[+]  masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
