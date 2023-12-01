@@ -970,9 +970,9 @@ def crack_publik():
 			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
-			print(' 🔥 : {}'.format(len(id)));setting()
+			print('>> Total Idz : {}'.format(len(id)));setting()
 		except Exception as e:
-		    print (e)
+			print(e)
 #----------[ HASIL-OK ]----------#            
 def hasil_ok():
 	try:vin = os.listdir('CYXIEON-OK')
