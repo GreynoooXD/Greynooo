@@ -959,9 +959,10 @@ def menu():
 
 #----------[ CRACK-PUBLIK  ]----------#            
 def crack_publik():
-	    token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-		a = input('[+]  masukan id target: ')
+	try:
+		token = open('.cyxieontoken.txt','r').read()
+		cok = open('.cyxieoncokies.txt','r').read()
+	    a = input('[+]  masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
