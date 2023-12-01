@@ -664,8 +664,8 @@ def result():
 def brayen_dump():
 	try:
 		token = open('.token.txt','r').read()
-		kukis = open('.cok.txt','r').read()
-	    a = input(f' [+] Masukan ID Target : ')
+		cok = open('.cok.txt','r').read()
+	    a = input(' [+] Masukan ID Target : ')
 	    try:
 		    params = {
 			"access_token": token,
@@ -674,7 +674,7 @@ def brayen_dump():
 		    b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
 		    for c in b["friends"]["data"]:
 			    id.append(c["id"]+"|"+c["name"])
-		print(f' [+] Total ID Yang Terkumpul : {}'.format(len(id)));setting()
+		print(' [+] Total ID Yang Terkumpul : {}'.format(len(id)));setting()
 	except Exception as e:
 		    print (e)
 #-------------------[ CRACK-PUBLIK ]----------------#
