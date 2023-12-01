@@ -665,19 +665,16 @@ def brayen_dump():
 	try:
 		token = open('.token.txt','r').read()
 		kukis = open('.cok.txt','r').read()
-	except IOError:
-		exit()
 	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' [+] Masukan ID Target : ')
+	a = input(f' [+] Masukan ID Target : ')
 	try:
 		params = {
 			"access_token": token, 
 			"fields": "name,friends.fields(id,name,birthday)"
 			}
-		koH = requests.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
-		for pi in koH["friends"]["data"]:
-			try:id.append(pi["id"]+"|"+pi["name"])
-			except:continue
+		b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
+		for c in b["friends"]["data"]:
+			id.append(c["id"]+"|"+c["name"])
 		print(f' [+] Total ID Yang Terkumpul : {}'.format(len(id)));setting()
 	except Exception as e:
 		    print (e)
