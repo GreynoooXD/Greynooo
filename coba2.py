@@ -962,7 +962,7 @@ def crack_publik():
 	try:
 		token = open('.cyxieontoken.txt','r').read()
 		cok = open('.cyxieoncokies.txt','r').read()
-	    a = input('[+] masukan id target: ')
+	    a = input('>> masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
