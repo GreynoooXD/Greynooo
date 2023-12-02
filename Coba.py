@@ -690,43 +690,60 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' [+] {P}Mau Berapa Idz Target {x} : '))
+		jum = int(input(h+f' • Mau Berapa Idz Target : '))
 	except ValueError:
-		print(' [+] Wrong input ')
+		print(' • Wrong input ')
 		exit()
 	if jum<1 or jum>80:
-		print(f'{h} [+] {x}Pertemanan Tidak Publik  ')
+		print(h+f'{h} • Pertemanan Tidak Publik  ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' [+] {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		kl = input(h+f' • Masukan Idz Target Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			headers = {
+			"connection": "keep-alive",
+			"accept": "*/*",
+			"sec-fetch-dest": "empty",
+			"sec-fetch-mode": "cors",
+			"sec-fetch-site": "same-origin",
+			"sec-fetch-user": "?1",
+			"sec-ch-ua-mobile": "?1",
+			"upgrade-insecure-requests": "1",
+			"user-agent": "Mozilla/5.0 (Linux; Android 11; AC2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36",
+			"accept-encoding": "gzip, deflate",
+			"accept-language": "id-ID,id;q=0.9"
+			}
+			params = {
+			"access_token": token,
+			"fields": f"name,friends.fields(id,name,birthday)"
+			}
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(20000)&access_token='+tokenku[0], params=params, headers=headers, cookies = {'cookies':cok}).json()
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
 					if iso in id:pass
 					else:id.append(iso)
+					dump(url["friends"]["paging"]["cursors"]["after"])
 				except:continue
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print(' [+] Unstable Signal ')
+			print(' • Unstable Signal ')
 			exit()
 	try:
-		print(f' [+] {P}Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
+		print(h+f' • Total Idz Target Yang Terkumpul{x} : {m}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f'{x}')
-		print(' [+] Unstable Signal ')
+		print(h+f'{x}')
+		print(' • Unstable Signal ')
 		back()
 	except (KeyError,IOError):
-		print(f' [+] {k} Friendship Not Public {x}')
+		print(h+f' • {k} Friendship Not Public {x}')
 		time.sleep(3)
 		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
