@@ -307,9 +307,10 @@ def result():
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def nge_krek1():
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-		a = input('>> masukan id target: ')
+		with requests.Session() as ses:
+		token = open('.cyxieontoken.txt','r').read()
+		cok = open('.cyxieoncokies.txt','r').read()		
+		a = input('└──[ masukan id target: ')
 		try:
 			params = {
 			"access_token": token, 
@@ -318,7 +319,7 @@ def nge_krek1():
 			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
 			for c in b["friends"]["data"]:
 				id.append(c["id"]+"|"+c["name"])
-			print('>> Total Idz : {}'.format(len(id)));setting()
+			print('└──[ Total Idz : {}'.format(len(id)));setting()
 		except Exception as e:
 			print(e)
 #-------------------[ CRACK-PENGIKUT ]----------------#
