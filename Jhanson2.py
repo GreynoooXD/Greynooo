@@ -307,7 +307,6 @@ def result():
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def nge_krek1():
-		with requests.Session() as ses:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()		
 		a = input('└──[ masukan id target: ')
