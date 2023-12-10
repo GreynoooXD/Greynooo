@@ -124,7 +124,7 @@ def banner():
 \t|_______/[___]   \'-;__/[_____][_____]'.__.'[___]    	
 			{m}•{k}•{h}•{sir} Author : Febriven_Greyno {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
-def login():
+def login123():
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
